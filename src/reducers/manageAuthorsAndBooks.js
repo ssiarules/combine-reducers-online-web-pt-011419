@@ -10,7 +10,7 @@ export default rootReducer
 
 
   function booksReducer(state = [], action){
-  
+
   let idx;
   switch (action.type) {
     case "ADD_BOOK":
@@ -30,7 +30,7 @@ export default rootReducer
   }
 
 function authorsReducer(state = [], action){
-  
+
 
     case "ADD_AUTHOR":
       return {
