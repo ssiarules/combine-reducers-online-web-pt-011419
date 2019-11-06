@@ -23,7 +23,7 @@ export default rootReducer
 
         default:
           return state;
-      };
+      }
   }
 
 function authorsReducer(state = [], action){
