@@ -23,7 +23,7 @@ export default rootReducer
       idx = state.books.findIndex(book => book.id === action.id);
       return {
         ...state,
-        books: [...state.books.slice(0, idx), ...state.books.slice(idx + 1)]
+        books: [...state.books.slice(0, idx), ...state.books.slice(idx + 1)];
 
         default:
           return state;
