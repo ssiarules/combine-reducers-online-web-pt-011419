@@ -15,9 +15,7 @@ export default rootReducer
   let idx;
   switch (action.type) {
     case "ADD_BOOK":
-      return {
-        ...state,
-        books: [...state.books, action.book];
+      return [...state.books, action.book];
 
     case "REMOVE_BOOK":
       idx = state.books.findIndex(book => book.id === action.id);
