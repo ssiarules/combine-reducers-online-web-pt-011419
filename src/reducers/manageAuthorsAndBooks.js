@@ -30,9 +30,7 @@ function authorsReducer(state = [], action){
     let idx
     switch (action.type){
     case "ADD_AUTHOR":
-      return {
-        ...state,
-        authors: [...state.authors, action.author];
+      return [...state.authors, action.author];
 
     case "REMOVE_AUTHOR":
       idx = state.authors.findIndex(author => author.id === action.id);
