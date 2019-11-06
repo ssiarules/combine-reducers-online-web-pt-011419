@@ -36,9 +36,7 @@ function authorsReducer(state = [], action){
 
     case "REMOVE_AUTHOR":
       idx = state.authors.findIndex(author => author.id === action.id);
-      return {
-        ...state,
-        authors: [...state.authors.slice(0, idx), ...state.authors.slice(idx + 1)];
+      return [...state.authors.slice(0, idx), ...state.authors.slice(idx + 1)];
 
     default:
       return state;
