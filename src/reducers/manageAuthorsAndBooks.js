@@ -30,8 +30,8 @@ export default rootReducer
   }
 
 function authorsReducer(state = [], action){
-
-
+    let idx
+    switch (action.type){
     case "ADD_AUTHOR":
       return {
         ...state,
